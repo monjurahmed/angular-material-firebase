@@ -1,5 +1,8 @@
 # angular-material-firebase
 Angular 8 , Material Design using fire base database
+
+
+
 --adding angular materail
 ng add @angular/material
 
