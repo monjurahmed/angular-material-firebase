@@ -7,9 +7,13 @@ Angular 8 , Material Design using fire base database
 ng add @angular/material
 
 --adding angular firebase
+
 --> go to google firebase console 
+
 --> Add a new project with your desired name
+
 --> after successfull generiting the project go to database menu
+
 --> go real time database option and create a database and chose the test mode from the wizard and then press enable
 
 -- install the bellow packages with the command
@@ -17,6 +21,7 @@ ng add @angular/material
 1. npm i --s firebase angularfire2
 
 --import 2 packages in the app.module.ts file
+
 2. import { AngularFireModule } from 'angularfire2'
 
 3. import { AngularFireDatabaseModule } from 'angularfire2/database'
