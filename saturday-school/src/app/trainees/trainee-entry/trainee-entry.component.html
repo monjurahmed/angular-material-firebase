@@ -1,0 +1,32 @@
+<app-trainees></app-trainees>
+<form class="normal-form" [formGroup]= "service.form" (submit)="saveInfo()">
+    <input type="hidden" formControlName="$key">
+    
+    <mat-form-field class="full-width">       
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Trainee Name" formControlName="name" required>
+        <mat-error>Name is required.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Mobile No</mat-label>
+        <input matInput placeholder="Trainee Mobile No" formControlName="mobileNo" required>
+        <mat-error *ngIf="service.form.controls['mobileNo'].errors?.required">Mobile No is required.</mat-error>
+        <mat-error *ngIf="service.form.controls['mobileNo'].errors?.minlength">Minimum 11 charecter needed.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Trainee Email" formControlName="email">
+        <mat-error>Invailid email address.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Address</mat-label>
+        <textarea matInput placeholder="Trainee Address" formControlName="address"></textarea>
+      </mat-form-field>
+      
+      <div>
+          <button mat-raised-button color="primary" [disabled]="service.form.invalid"> Submit</button>
+      </div>
+</form>

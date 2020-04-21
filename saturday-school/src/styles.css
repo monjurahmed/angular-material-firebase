@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.space-remover{
+    flex: 1 auto;
+}
+
+.normal-form{
+    margin: 20px;
+    max-width: 500px;
+    min-width: 150px;
+    width: 100%;
+}
+.full-width{
+    width: 100%;   
+}
+
+snack-bar-container.success{
+    background-color: green;
+    color: white;
+}
+
+snack-bar-container.notification{
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    margin: 20px;
+  }

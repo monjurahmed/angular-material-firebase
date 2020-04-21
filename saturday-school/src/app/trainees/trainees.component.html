@@ -1,0 +1,12 @@
+<div class="container">
+    <mat-toolbar>
+        <button mat-button [matMenuTriggerFor]="menu">Trainees</button>
+            <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/entry" routerActiveLink="active" >Trainee Entry</button>
+            <button mat-menu-item routerLink="/list" routerActiveLink="active">Trainee List</button>
+        </mat-menu>
+        <span class="space-remover" ></span>
+        <span>Trainee Tracker</span>
+        <span class="space-remover" ></span>
+    </mat-toolbar>
+</div>
