@@ -3,7 +3,7 @@ Angular 8 , Material Design using fire base database
 
 
 
---adding angular materail
+--adding angular materail write the command :
 ng add @angular/material
 
 --adding angular firebase
